@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Tmdb from './Tmdb'
 import MovieRow from './components/MovieRow';
-import FeaturedMovie from './components/FeaturedMovie';
+import FeaturedMovie from './components/Featured';
 import Header from './components/Header';
 
 export default () => {
@@ -65,6 +65,12 @@ export default () => {
         Direitos de imagem para Netlfix <br/>
         Dados pegos do site Themoviedb.org
       </footer>
+
+     {movieList.length <= 0 &&
+        <div className="loading">
+          <img src="https://cdn.lowgif.com/small/0534e2a412eeb281-the-counterintuitive-tech-behind-netflix-s-worldwide.gif" alt="loading "  alt="Carregando" /> 
+        </div>     
+     }
     </div>
   );
 }
