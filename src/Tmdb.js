@@ -1,4 +1,4 @@
-const API_KEY = "4b4b9682bbf77257832fd9dea1f705a9";
+const API_KEY = "API_KEY";
 const API_BASE ="https://api.themoviedb.org/3";
 
 /* Originais Netlfix / Recomendados para você (traiding)/ Em alta( top rated)/ ação, comédia e
